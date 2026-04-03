@@ -2,16 +2,31 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
+<title>ItemSetClient</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Minecraft Font -->
 <!-- <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet"> -->
 
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Kosugi+Maru&display=swap" rel="stylesheet">
+
 <style>
-body {
+/* body {
     margin: 0;
     background: #87befd;
     font-family: 'Minecraft', monospace;
+} */
+ body {
+    margin: 0;
+    background: #87befd;
+
+    /* 日本語優先 → かわいい */
+    font-family: 'Kosugi Maru', sans-serif;
+}
+
+/* 英語だけやわらかく */
+.en {
+    font-family: 'Nunito', sans-serif;
 }
 
 /* レイアウト */
@@ -135,16 +150,16 @@ body {
         <!-- そのまま既存のpanel全部 -->
 
     <div class="panel">
-        <div class="panel-title">ItemSet Ver1.2</div>
+        <div class="panel-title en">ItemSet Ver1.2</div>
         <div class="item" onclick="selectItem(this,'tomenu')">ToMenu</div>
         <div class="item" onclick="selectItem(this,'tohomemenu')">ToHomeMenu</div>
         <h3>  </h3>
-        <div class="panel-title">Render</div>
+        <div class="panel-title en">Render</div>
         <div class="item" onclick="selectItem(this,'armor')">ArmorHUD</div>
         <div class="item" onclick="selectItem(this,'debug')">DebugText</div>
         <div class="item" onclick="selectItem(this,'itemph')">ItemPhysics</div>
         <h3> </h3>
-        <div class="panel-title">Misc</div>
+        <div class="panel-title en">Misc</div>
         <div class="item" onclick="selectItem(this,'anticsm')">AntiCSM</div>
         <div class="item" onclick="selectItem(this,'antispawer')">AntiSpawner</div>
         <div class="item" onclick="selectItem(this,'antitexture')">AntiTexture</div>
@@ -152,31 +167,31 @@ body {
         <div class="item" onclick="selectItem(this,'skincopy')">SkinCopy</div>
     </div>
     <div class="panel">
-        <div class="panel-title">ModMenu</div>
+        <div class="panel-title en">ModMenu</div>
         <div class="item" onclick="selectItem(this,'cinomenu')">cinoMenu</div>
         <div class="item" onclick="selectItem(this,'speedboots')">SpeedBoots</div>
         <div class="item" onclick="selectItem(this,'custompotion')">CustomPotion</div>
         <div class="item" onclick="selectItem(this,'chestmenu')">ChestMenu</div>
         <div class="item" onclick="selectItem(this,'stackmenu')">StackMenu</div>
         <h3> </h3>
-        <div class="panel-title">AddTag</div>
+        <div class="panel-title en">AddTag</div>
         <div class="item" onclick="selectItem(this,'unbreakable')">Unbreakable</div>
         <div class="item" onclick="selectItem(this,'hideflag')">HideFlag</div>
         <div class="item" onclick="selectItem(this,'deletedflag')">DeletedFlag</div>
     </div>
     <div class="panel">
-        <div class="panel-title">Movement</div>
+        <div class="panel-title en">Movement</div>
         <div class="item" onclick="selectItem(this,'fly')">Fly</div>
         <div class="item" onclick="selectItem(this,'bhop')">BunnyHop</div>
         <div class="item" onclick="selectItem(this,'speed')">Speed</div>
         <div class="item" onclick="selectItem(this,'antikb')">AntiKB</div>
         <h3> </h3>
-        <div class="panel-title">Items</div>
+        <div class="panel-title en">Items</div>
         <div class="item" onclick="selectItem(this,'itemstack')">Itemstack</div>
         <div class="item" onclick="selectItem(this,'inventoryclean')">InventoryClean</div>
         <div class="item" onclick="selectItem(this,'swapoffhand')">SwapOffHand</div>
         <h3> </h3>
-        <div class="panel-title">World</div>
+        <div class="panel-title en">World</div>
         <div class="item" onclick="selectItem(this,'antikick')">AntiKick</div>
     </div>
 
