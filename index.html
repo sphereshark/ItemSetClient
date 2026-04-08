@@ -154,25 +154,25 @@
         <div class="item" onclick="selectItem(this,'tomenu')">ToMenu</div>
         <div class="item" onclick="selectItem(this,'tohomemenu')">ToHomeMenu</div>
         <h3>  </h3>
-        <div class="panel-title en">Render</div>
-        <div class="item" onclick="selectItem(this,'armor')">ArmorHUD</div>
-        <div class="item" onclick="selectItem(this,'debug')">DebugText</div>
-        <div class="item" onclick="selectItem(this,'itemph')">ItemPhysics</div>
+        <div class="panel-title en">Movement</div>
+        <div class="item" onclick="selectItem(this,'fly')">Fly</div>
+        <div class="item" onclick="selectItem(this,'bhop')">BunnyHop</div>
+        <div class="item" onclick="selectItem(this,'speed')">Speed</div>
+        <div class="item" onclick="selectItem(this,'antikb')">AntiKB</div>
         <h3> </h3>
-        <div class="panel-title en">Misc</div>
-        <div class="item" onclick="selectItem(this,'anticsm')">AntiCSM</div>
-        <div class="item" onclick="selectItem(this,'antispawer')">AntiSpawner</div>
-        <div class="item" onclick="selectItem(this,'antitexture')">AntiTexture</div>
-        <div class="item" onclick="selectItem(this,'micmute')">MicMute</div>
-        <div class="item" onclick="selectItem(this,'skincopy')">SkinCopy</div>
+        <div class="panel-title en">World</div>
+        <div class="item" onclick="selectItem(this,'antikick')">AntiKick</div>
+
     </div>
     <div class="panel">
         <div class="panel-title en">ModMenu</div>
+        <div class="item" onclick="selectItem(this,'hackitemenu')">HackItemMenu</div>
         <div class="item" onclick="selectItem(this,'cinomenu')">cinoMenu</div>
+        <div class="item" onclick="selectItem(this,'chestmenu')">ChestMenu</div>
         <div class="item" onclick="selectItem(this,'speedboots')">SpeedBoots</div>
         <div class="item" onclick="selectItem(this,'custompotion')">CustomPotion</div>
-        <div class="item" onclick="selectItem(this,'chestmenu')">ChestMenu</div>
-        <div class="item" onclick="selectItem(this,'stackmenu')">StackMenu</div>
+        <div class="item" onclick="selectItem(this,'eggwarsvil')">EggWarsMenu</div>
+        <div class="item" onclick="selectItem(this,'spawnermenu')">SpawMenu</div>
         <h3> </h3>
         <div class="panel-title en">AddTag</div>
         <div class="item" onclick="selectItem(this,'unbreakable')">Unbreakable</div>
@@ -180,19 +180,25 @@
         <div class="item" onclick="selectItem(this,'deletedflag')">DeletedFlag</div>
     </div>
     <div class="panel">
-        <div class="panel-title en">Movement</div>
-        <div class="item" onclick="selectItem(this,'fly')">Fly</div>
-        <div class="item" onclick="selectItem(this,'bhop')">BunnyHop</div>
-        <div class="item" onclick="selectItem(this,'speed')">Speed</div>
-        <div class="item" onclick="selectItem(this,'antikb')">AntiKB</div>
-        <h3> </h3>
+        <div class="panel-title en">Misc</div>
+        <div class="item" onclick="selectItem(this,'anticsm')">AntiCSM</div>
+        <div class="item" onclick="selectItem(this,'antispawer')">AntiSpawner</div>
+        <div class="item" onclick="selectItem(this,'antitexture')">AntiTexture</div>
+        <div class="item" onclick="selectItem(this,'armor')">ArmorHUD</div>
+        <div class="item" onclick="selectItem(this,'debug')">DebugText</div>
+        <div class="item" onclick="selectItem(this,'itemph')">ItemPhysics</div>
+        <div class="item" onclick="selectItem(this,'micmute')">MicMute</div>
+        <div class="item" onclick="selectItem(this,'skincopy')">SkinCopy</div>
+        <div class="item" onclick="selectItem(this,'capender')">Cape: Ender</div>
+    </div>
+    <div class="panel">
         <div class="panel-title en">Items</div>
+        <div class="item" onclick="selectItem(this,'inventoryclean')">InvenClean</div>
+        <div class="item" onclick="selectItem(this,'inventorywalk')">InvenWalk</div>
         <div class="item" onclick="selectItem(this,'itemstack')">Itemstack</div>
-        <div class="item" onclick="selectItem(this,'inventoryclean')">InventoryClean</div>
+        <div class="item" onclick="selectItem(this,'reinbooama')">RainbowArmor</div>
         <div class="item" onclick="selectItem(this,'swapoffhand')">SwapOffHand</div>
         <h3> </h3>
-        <div class="panel-title en">World</div>
-        <div class="item" onclick="selectItem(this,'antikick')">AntiKick</div>
     </div>
 
 </div>
@@ -247,8 +253,13 @@ const descriptions = {
     itemstack: "手に持っているアイテムの数を64個にする",
     inventoryclean: "持ち物全部リセット",
     swapoffhand: "左手にアイテムを移動:十字キー下&ZL",
-    antikick: "追放を無効化"
-
+    antikick: "追放を無効化",
+    capender: "エンダーマンマントをつける",
+    hackitemenu: "[材料タブ]普通は出せないアイテムを表示",
+    eggwarsvil: "[材料タブ]エッグウォーズの村人を16色出せる",
+    spawnermenu: "[材料タブ]スポーンエッグにないモブを出せる",
+    inventorywalk: "インベントリーを開きながら歩くことができる",
+    reinbooama: "革装備が虹色に光る防具を装備する"
 };
 
 function selectItem(el, key) {
