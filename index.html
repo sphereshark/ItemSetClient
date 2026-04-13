@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>ItemSetClient</title>
+<title>CinoClient</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Minecraft Font -->
@@ -150,9 +150,9 @@
         <!-- そのまま既存のpanel全部 -->
 
     <div class="panel">
-        <div class="panel-title en">ItemSet Ver1.2</div>
-        <div class="item" onclick="selectItem(this,'tomenu')">ToMenu</div>
-        <div class="item" onclick="selectItem(this,'tohomemenu')">ToHomeMenu</div>
+        <div class="panel-title en">CinoCli Ver2.4</div>
+        <!-- <div class="item" onclick="selectItem(this,'tomenu')">ToMenu</div>
+        <div class="item" onclick="selectItem(this,'tohomemenu')">ToHomeMenu</div> -->
         <h3>  </h3>
         <div class="panel-title en">Movement</div>
         <div class="item" onclick="selectItem(this,'fly')">Fly</div>
@@ -173,11 +173,7 @@
         <div class="item" onclick="selectItem(this,'custompotion')">CustomPotion</div>
         <div class="item" onclick="selectItem(this,'eggwarsvil')">EggWarsMenu</div>
         <div class="item" onclick="selectItem(this,'spawnermenu')">SpawMenu</div>
-        <h3> </h3>
-        <div class="panel-title en">AddTag</div>
-        <div class="item" onclick="selectItem(this,'unbreakable')">Unbreakable</div>
-        <div class="item" onclick="selectItem(this,'hideflag')">HideFlag</div>
-        <div class="item" onclick="selectItem(this,'deletedflag')">DeletedFlag</div>
+        <div class="item" onclick="selectItem(this,'unbreakmenu')">UnbreakMenu</div>
     </div>
     <div class="panel">
         <div class="panel-title en">Misc</div>
@@ -189,16 +185,25 @@
         <div class="item" onclick="selectItem(this,'itemph')">ItemPhysics</div>
         <div class="item" onclick="selectItem(this,'micmute')">MicMute</div>
         <div class="item" onclick="selectItem(this,'skincopy')">SkinCopy</div>
-        <div class="item" onclick="selectItem(this,'capender')">Cape: Ender</div>
+        <div class="item" onclick="selectItem(this,'capecopy')">CapeCopy</div>
+        <div class="item" onclick="selectItem(this,'potionmgmg')">Potion:mgmg</div>
+        <div class="item" onclick="selectItem(this,'minimenu')">MiniMenu</div>
+        <div class="item" onclick="selectItem(this,'capejuu')">2p: Cape[10]</div>
     </div>
     <div class="panel">
         <div class="panel-title en">Items</div>
-        <div class="item" onclick="selectItem(this,'inventoryclean')">InvenClean</div>
         <div class="item" onclick="selectItem(this,'inventorywalk')">InvenWalk</div>
-        <div class="item" onclick="selectItem(this,'itemstack')">Itemstack</div>
-        <div class="item" onclick="selectItem(this,'reinbooama')">RainbowArmor</div>
         <div class="item" onclick="selectItem(this,'swapoffhand')">SwapOffHand</div>
-        <h3> </h3>
+        <div class="item" onclick="selectItem(this,'itemstack')">Itemstack</div>
+        <div class="item" onclick="selectItem(this,'inventoryclean')">InvenClean</div>
+        <div class="item" onclick="selectItem(this,'reinbooama')">RainbowArmor</div>
+    </div>
+    <div class="panel">
+        <div class="panel-title en">AddTag</div>
+        <div class="item" onclick="selectItem(this,'unbreakable')">Unbreakable</div>
+        <div class="item" onclick="selectItem(this,'hideflag')">HideFlag</div>
+        <div class="item" onclick="selectItem(this,'deletedflag')">DeletedFlag</div>
+        <div class="item" onclick="selectItem(this,'costreset')">CostReset</div>
     </div>
 
 </div>
@@ -214,11 +219,11 @@
 
         <div class="info">
             <h3>
-                ItemSetClient Ver2.2<br>
+                CinoClient Ver2.4<br>
                 十字キー上+LRでメニュー表示<br>
                 公式サーバーでしか配布してないです。<br>
                 PinkDiamondと一緒に使えます。<br>
-                2026/04/02 更新
+                2026/04/13 更新
             </h3>
 
             <p class="author">製作者: cino</p>
@@ -228,8 +233,8 @@
 </div>
 <script>
 const descriptions = {
-    tomenu: "メインメニューに移動",
-    tohomemenu: "ホームメニューに移動",
+    // tomenu: "メインメニューに移動",
+    // tohomemenu: "ホームメニューに移動",
     armor: "防具表示HUD",
     debug: "デバッグ情報表示",
     itemph: "アイテムをぺらぺらに",
@@ -254,12 +259,17 @@ const descriptions = {
     inventoryclean: "持ち物全部リセット",
     swapoffhand: "左手にアイテムを移動:十字キー下&ZL",
     antikick: "追放を無効化",
-    capender: "エンダーマンマントをつける",
+    capecopy: "目の前のマントコピー",
     hackitemenu: "[材料タブ]普通は出せないアイテムを表示",
     eggwarsvil: "[材料タブ]エッグウォーズの村人を16色出せる",
     spawnermenu: "[材料タブ]スポーンエッグにないモブを出せる",
     inventorywalk: "インベントリーを開きながら歩くことができる",
-    reinbooama: "革装備が虹色に光る防具を装備する"
+    reinbooama: "革装備が虹色に光る防具を装備する",
+    unbreakmenu: "無限耐久のモッドメニュー",
+    costreset: "エンチャントコストのリセット",
+    potionmgmg: "飲むポーションを食べるモーションにします",
+    minimenu: "インベントリーやアイテム欄が小さくなる",
+    capejuu: "2ページ目にマントが各10枚"
 };
 
 function selectItem(el, key) {
